@@ -1,0 +1,15 @@
+per_cent = {'ТКБ' : 5.6, 'СКБ' : 5.9, 'ВТБ' : 4.28, 'СБЕР' : 4.0}
+money = int(input('Введите сумму вклада: \n'))
+bank1 = int((per_cent['ТКБ']) * money / 100)
+bank2 = int((per_cent['СКБ']) * money / 100)
+bank3 = int((per_cent['ВТБ']) * money / 100)
+bank4 = int((per_cent['СБЕР']) * money / 100)
+deposit = list()
+deposit.append(bank1)
+deposit.append(bank2)
+deposit.append(bank3)
+deposit.append(bank4)
+print(deposit)
+max_deposit = max(deposit)
+print('Максимальная сумма, которую вы можете заработать —', max_deposit,'руб.')
+
